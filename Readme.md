@@ -1,6 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Денис Клыков](https://up.htmlacademy.ru/htmlcss/24/user/263215).
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 

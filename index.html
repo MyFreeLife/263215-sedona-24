@@ -34,9 +34,9 @@
             <h3>Настоящий городок</h3>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="reasons-item-img">
+          <figure class="reasons-item-img">
             <img src="img/reasons-item-img.jpg" width="800" height="401" alt="Фото городка Седона">
-          </div>
+          </figure>
           <ul class="advantages">
             <li class="advantages-item">
               <h4>Жильё</h4>
@@ -57,9 +57,9 @@
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <div class="reasons-item-img-2">
+          <figure class="reasons-item-img-2">
             <img src="img/reasons-item-img-2.jpg" width="800" height="400" alt="Фото моста дьявола">
-          </div>
+          </figure>
         </li>
         <li class="reasons-item gray">
           <h3>Небольшая площадь</h3>
@@ -74,29 +74,58 @@
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ol>
-      </section>
-      <section class="search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
-      </section>
-      <section class="map"></section>
+    </section>
+    <section class="search">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>
+            <a href="#">Поиск гостиницы в Седоне</a>
+          </legend>
+          <label class="date-label" for="arrival-date">Дата заезда:</label>
+          <input class="date" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required>
+          <label class="date-label" for="leaving-date">Дата выезда:</label>
+          <input class="date" type="text" name="leaving-date" id="leaving-date" placeholder="4 июля 2017" required>
+          <label for="adult">Взрослые:</label>
+          <div class="number-field">
+            <a href="#" class="icon-minus"></a>
+            <input class="number" type="text" name="adult" id="adult" placeholder="2" required>
+            <a href="#" class="icon-plus"></a>
+          </div>
+          <label class="number-label-children" for="children">Дети:</label>
+          <div class="number-field">
+            <a href="#" class="icon-minus"></a>
+            <input class="number" type="text" name="children" id="children" placeholder="0" required>
+            <a href="#" class="icon-plus"></a>
+          </div>
+          <input type="submit" value="Найти" aria-label="Найти">
+        </fieldset>
+      </form>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Седона на карте</h2>
+      <p>
+        <img src="img/map.jpg" width="1718" height="748" alt="Седона, Аризона 86336, США">
+      </p>
+    </section>
   </main>
   <footer class="main-footer">
-        <a href="#" class="hashtag">
-          #visitsedona
-        </a>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
-        </ul>
-      <div class="copyright">
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright-logo">
-          <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru" width="115" height="41">
-        </a>
-      </div>
+    <a href="#" class="hashtag">
+      #visitsedona
+    </a>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#" target="_blank" aria-label="Седона во Вконтакте">Вконтакте</a></li>
+      <li><a class="social-button" href="#" target="_blank" aria-label="Седона на Фейсбуке">Фейсбук</a></li>
+      <li><a class="social-button" href="#" target="_blank" aria-label="Седона на Ютубе">Ютуб</a></li>
+    </ul>
+    <div class="copyright">
+      Website by
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright-logo">
+        <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru" width="115" height="41">
+      </a>
+    </div>
   </footer>
 </body>
+
 </html>

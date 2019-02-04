@@ -78,8 +78,8 @@
     <section class="search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" href="#">Поиск гостиницы в Седоне</button>
-        <form class="search-form" method="Post" action="https://echo.htmlacademy.ru">
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label class="date-label" for="arrival-date">Дата заезда:</label>
           <input class="date" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required>
@@ -88,14 +88,14 @@
           <label class="date-label" for="leaving-date">Дата выезда:</label>
           <input class="date" type="text" name="leaving-date" id="leaving-date" placeholder="4 июля 2017" required>
         </p>
-        <label for="adult">Взрослые:</label>
           <p class="number-field">
+            <label for="adult">Взрослые:</label>
             <button type="button" class="icon-minus" aria-label="кнопка минус"></button>
             <input class="number" type="text" name="adult" id="adult" placeholder="2" required>
             <button type="button" class="icon-plus" aria-label="кнопка плюс"></button>
           </p>
-          <label class="number-label-children" for="children">Дети:</label>
           <p class="number-field">
+            <label class="number-label-children" for="children">Дети:</label>
             <button type="button" class="icon-minus" aria-label="кнопка минус"></button>
             <input class="number" type="text" name="children" id="children" placeholder="0" required>
             <button type="button" class="icon-plus" aria-label="кнопка плюс"></button>

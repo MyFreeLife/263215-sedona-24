@@ -1,5 +1,55 @@
-.body {
-  min-width: 1200px;
+@font-face {
+    font-family: 'PT Sans';
+    src: url('ptsans.eot');
+    src: local('PT Sans'), local('PTSans-Regular'),
+         url('ptsans.eot?#iefix') format('embedded-opentype'),
+         url('ptsans.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #81b3d2;
+}
+
+.site-navigation a:active {
+  background-color: #d2d2d2;
+}
+
+a.current {
+  background-color: #766357;
 }
 
 .visually-hidden {
@@ -11,4 +61,54 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.promo {
+background-image: url("../img/background-photo.jpg");
+}
+
+
+.reasons {
+  text-align: center;
+}
+
+.reasons-intro {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons-description {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.reasons-item-info h3,
+.advantages-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reasons-item-info h3,
+.reasons-item-info p,
+.reasons-item-info span {
+  color: #ffffff;
+}
+
+.reasons-item-info p,
+.advantages-item p,
+.reasons-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.advantages-item p,
+.reasons-item p {
+  color:#333333
+}
+
+.reasons-list,
+.advantages {
+  list-style: none;
 }

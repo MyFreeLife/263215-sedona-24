@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="inner-page">
+<body>
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="logo">
@@ -19,7 +19,7 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a class="current">Гостиницы</a></li>
+        <li><a class="current" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
     <h1 class="visually-hidden">Гостиницы</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр отелей</h2>
-      <form class="housing-form" method="" action="https://echo.htmlacademy.ru">
+      <form class="housing-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="housing-form-fieldset">
           <legend>Инфраструктура:</legend>
           <ul>
@@ -91,19 +91,19 @@
         <p class="sort-result">Найдено:<span class="sorting-count">3</span></p>
         <p class="sort-header">Сортировка:</p>
         <ul class="user-sorting">
-          <li class="sort-item">По цене
-            <a href="#" class="sort-link active"></a>
+          <li class="sort-item">
+            <a href="#" class="sort-link active">По цене</a>
           </li>
-          <li class="sort-item">По типу
-            <a href="#" class="sort-link"></a>
+          <li class="sort-item">
+            <a href="#" rel="nofollow" class="sort-link">По типу</a>
           </li>
-          <li class="sort-item">По рейтингу
-            <a href="#" class="sort-link"></a>
+          <li class="sort-item">
+            <a href="#" rel="nofollow" class="sort-link">По рейтингу</a>
           </li>
         </ul>
         <ul class="arrow-sorting">
           <li class="arrow-item">
-            <a href="#" class="sort-link sort-icon">
+            <a href="#" rel="nofollow" class="sort-link sort-icon">
               <svg></svg>
             </a>
           </li>
@@ -125,10 +125,10 @@
             <p class="type-and-price">
               <span>Гостиница</span>
               <span>От 4000 Р.</span>
-           </div>
+           </p>
             <p class="buttons">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button more" href="#">Подробнее</a>
+              <a class="button booking" href="#">Забронировать</a>
             </p>
           </p>
           <div class="rating">
@@ -144,9 +144,9 @@
               <span>Мотель</span>
               <span>От 3000 Р.</span>
             </p>
-            <p class="buttons">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+            <p class="hotels-item-links">
+              <a class="button more" href="#">Подробнее</a>
+              <a class="button booking" href="#">Забронировать</a>
             </p>
           </div>
           <div class="rating">
@@ -163,8 +163,8 @@
               <span>От 2000 Р.</span>
             </p>
             <p class="hotels-item-links">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button more" href="#">Подробнее</a>
+              <a class="button booking" href="#">Забронировать</a>
             </p>
           </div>
           <div class="rating">

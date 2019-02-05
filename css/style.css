@@ -63,6 +63,7 @@ a.current {
   overflow: hidden;
 }
 
+/* главная */
 .promo {
 background-image: url("../img/background-photo.jpg");
 }
@@ -81,18 +82,19 @@ background-image: url("../img/background-photo.jpg");
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+  color:#333333;
 }
 
 .reasons-item-info h3,
-.advantages-item h4 {
+.advantages-item h4,
+.reasons-item h3 {
   font-size: 21px;
   line-height: 21px;
 }
 
-.reasons-item-info h3,
-.reasons-item-info p,
-.reasons-item-info span {
+.reasons-item-info {
   color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .reasons-item-info p,
@@ -104,11 +106,119 @@ background-image: url("../img/background-photo.jpg");
 }
 
 .advantages-item p,
-.reasons-item p {
-  color:#333333
+.gray p,
+.gray span {
+  color:#333333;
+  font-weight: normal;
 }
 
 .reasons-list,
 .advantages {
   list-style: none;
+}
+
+.gray {
+  background-color:#eeeeee;
+}
+
+.button {
+ font: inherit;
+ text-align: center;
+ color: #ffffff;
+ vertical-align: middle;
+ text-transform: uppercase;
+ border: none;
+}
+
+.search button {
+  background-color: #766357;
+}
+
+.search button:hover,
+.search button:focus {
+  background-color: #604e43;
+}
+
+.search button:active {
+  background-color: #503e33;
+}
+
+.search-btn {
+  background-color: #81b3d2;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #669ec0;
+}
+
+.search-btn:active {
+  background-color: #5496bd;
+}
+
+.date,
+.number {
+  background-color: #f2f2f2;
+}
+
+.date:hover,
+.number:hover {
+  background-color: #ebebeb;
+}
+
+.date:focus,
+.number:focus {
+  background-color: #ffffff;
+}
+
+.hashtag {
+  color: #000000;
+}
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+
+.copyright {
+  text-align: right;
+  line-height: 26px;
+}
+
+/* каталог */
+.inner-page {
+  background-color: gray;
+}
+
+.housing-form-fieldset ul {
+  list-style:none;
+}
+
+.filter-option label,
+ .filter-option input {
+  display: none;
+}
+
+.filter-option span {
+  height: 12px;
+  width: 12px;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  background-color:#FFF;
+  border-radius:2px;
+  padding:3px;
+}
+
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size:23px;
+  color: #ffffff;
+}
+
+.sort-link.active {
+  color: #81b3d2;
 }

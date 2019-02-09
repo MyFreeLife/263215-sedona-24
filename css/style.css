@@ -40,11 +40,15 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  position: relative;
+}
+
 .main-navigation {
-  margin: 0 73px;
-  width: 1200px;
-  font-size: 16px;
-  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -57,31 +61,27 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0 70px;
 }
 
-.site-navigation li:nth-child(1) {
-  order: 1;
-}
-.site-navigation li:nth-child(2) {
-  order: -1;
-}
+.site-navigation li:nth-of-type(2) {
+    margin-right: 120px;
+  }
 
-.site-navigation li:nth-child(3) {
-  order: 0;
-}
-
-.site-navigation li:nth-child(4) {
-  order: 2;
-}
-
-.site-navigation li:nth-child(5) {
-  order: 3;
+.site-navigation li:nth-of-type(3) {
+    margin-left: 120px;
 }
 
 .site-navigation a {
   color: #000000;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .site-navigation a:not(.current):hover,
@@ -111,11 +111,17 @@ a.current  {
 /* главная */
 .promo {
 background-image: url("../img/background-photo.jpg");
+margin-bottom: 55px
 }
 
 
 .reasons {
   text-align: center;
+}
+
+.reasons-header {
+  width: 575px;
+  margin: 0px auto 55px;
 }
 
 .reasons-intro {
@@ -130,6 +136,19 @@ background-image: url("../img/background-photo.jpg");
   color:#333333;
 }
 
+.reasons-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;;
+  text-align: center;
+}
+
+.reasons-item-row {
+  display: flex;
+  justify: space-between;
+  padding-bottom: 60px;
+}
+
 .reasons-item-info h3,
 .advantages-item h4,
 .reasons-item h3 {
@@ -140,14 +159,34 @@ background-image: url("../img/background-photo.jpg");
 .reasons-item-info {
   color: #ffffff;
   background-color: #81b3d2;
+  width: 400px;
+  height: 218px;
+  padding-top: 43px;
+}
+
+.reasons-item-info p {
+  text-align: center;
 }
 
 .reasons-item-info p,
 .advantages-item p,
-.reasons-item p {
+.reasons-item p,
+ span {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+}
+
+.advantages {
+  display: flex;
+  justify: space-between;
+  margin: 0;
+  padding: 155px 0px 85px;
+}
+
+.advantages-item {
+  width: 400px;
+
 }
 
 .advantages-item p,
@@ -156,6 +195,8 @@ background-image: url("../img/background-photo.jpg");
   color:#333333;
   font-weight: normal;
 }
+
+
 
 .reasons-list,
 .advantages {

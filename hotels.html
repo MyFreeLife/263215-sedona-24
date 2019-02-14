@@ -10,11 +10,14 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <div class="wrapper">
+    <header class="main-header">
     <nav class="main-navigation">
-      <a href="index.html" class="logo">
-        <img src="img/index-logo.svg" width="140" height="72" alt="Логотип сайта Седона">
-      </a>
+      <div class="logo">
+        <a class="nav-logo" rel="nofollow">
+          <img src="img/logo.svg" alt="logo sedona" width="140" height="72">
+        </a>
+      </div>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -88,7 +91,8 @@
     <section class="hotel-sort">
       <h2 class="visually-hidden">Сортировка отелей</h2>
       <section class="sort-list">
-        <p class="sort-result">Найдено:<span class="sorting-count">3</span></p>
+        <div class="sort-block">
+        <p class="sort-result">Найдено:3</p>
         <p class="sort-header">Сортировка:</p>
         <ul class="user-sorting">
           <li class="sort-item">
@@ -113,6 +117,7 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
     </section>
     <section class="catalog">
@@ -190,6 +195,7 @@
         <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru" width="115" height="41">
       </a>
     </div>
+  </div>
   </footer>
 </body>
 

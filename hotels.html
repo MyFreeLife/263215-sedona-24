@@ -33,7 +33,7 @@
       <form class="housing-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="housing-form-fieldset">
           <legend>Инфраструктура:</legend>
-          <ul>
+          <ul class="filters">
             <li class="filter-option">
               <input class="filter-input visually-hidden" type="checkbox" name="waterpool" id="filter-waterpool" checked>
               <span></span>
@@ -53,7 +53,7 @@
         </fieldset>
         <fieldset class="housing-form-fieldset">
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="filters">
             <li class="filter-option">
               <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
               <span></span>
@@ -71,7 +71,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="housing-form-fieldset">
+        <fieldset class="housing-form-fieldset range">
           <legend>Стоимость в сутки (Р):</legend>
           <div class="range-filter">
             <div class="price-controls">
@@ -91,7 +91,6 @@
     <section class="hotel-sort">
       <h2 class="visually-hidden">Сортировка отелей</h2>
       <section class="sort-list">
-        <div class="sort-block">
         <p class="sort-result">Найдено:3</p>
         <p class="sort-header">Сортировка:</p>
         <ul class="user-sorting">
@@ -108,16 +107,15 @@
         <ul class="arrow-sorting">
           <li class="arrow-item">
             <a href="#" rel="nofollow" class="sort-link sort-icon">
-              <svg></svg>
+              <img src="img/icon-up-dir.svg" alt="стрелочка вверх" width="11" height="10">
             </a>
           </li>
           <li class="arrow-item">
             <a href="#" rel="nofollow" class="sort-link sort-icon">
-              <svg></svg>
+              <img src="img/icon-down-dir.svg" alt="стрелочка вниз" width="11" height="10">
             </a>
           </li>
         </ul>
-        </div>
       </section>
     </section>
     <section class="catalog">

@@ -346,13 +346,38 @@ display: block;
   color: #ffffff;
 }
 
+.sort-block {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
 .sort-result {
   font-size: 21px;
   line-height: 26px;
+  width: 115px;
+  margin-left: 71px;
+}
+
+.sort-header {
+  width: 80px;
+  margin-left: 50px;
 }
 
 .user-sorting {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  justify-content: space-around;
+}
+
+.sort-item {
+  margin-right: auto;
+  width: 80px;;
+  text-align: left;
+  flex-wrap: nowrap;
 }
 
 .sort-header,

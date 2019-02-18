@@ -123,8 +123,9 @@ a.current {
 
 /* главная */
 .promo {
-  background-image: url("../img/background-photo.jpg");
-  margin-bottom: 55px
+  background-image: url("../img/background-photo.jpg") no-repeat;
+  background-size: 1200px auto;
+  margin-bottom: 55px;
 }
 
 .reasons {
@@ -154,7 +155,6 @@ a.current {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  ;
   text-align: center;
 }
 
@@ -228,7 +228,17 @@ span {
 
 .gray {
   background-color: #eeeeee;
-  flex-basis: 33.33%;
+  flex-basis: 33.333%;
+}
+
+.reasons-item h3 {
+  margin: 0;
+  padding: 45px 0 25px;
+}
+
+.description {
+  margin: 0;
+  padding: 30px 0 60px;
 }
 
 .button {
@@ -249,6 +259,17 @@ span {
   width: 470px;
   margin-bottom: 50px;
   text-align: center;
+}
+
+.search-header h2 {
+  margin: 0;
+  padding-top: 55px;
+}
+
+.advice-date {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
 }
 
 .header-button {
@@ -350,8 +371,119 @@ span {
   padding: 0;
 }
 
-.range {
-  margin-left: auto;
+.range-filter {
+  width: 330px;
+  margin: 50px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+font-size: 0;
+  color: inherit;
+  font: inherit;
+position: relative;
+  background: none;
+  border: none;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.toogle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.min-toogle {
+  left: 0;
+}
+
+.max-toogle {
+  left: 80%;
+}
+
+.toogle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-option,
@@ -506,10 +638,6 @@ a.hotel-name:active {
   line-height: 21px;
   font-weight: normal;
   color: #333333;
-}
-
-.btn {
-
 }
 
 .button.more {

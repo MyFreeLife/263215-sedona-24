@@ -325,6 +325,7 @@ span {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   margin: 0;
   height: 120px;
@@ -342,6 +343,25 @@ span {
   list-style: none;
 }
 
+.footer-social ul {
+  display: flex;
+  width: 151px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
 .copyright {
   text-align: right;
   line-height: 26px;
@@ -352,12 +372,13 @@ span {
 
 .housing-form {
   display: flex;
+  padding: 30px 72px;
+  color: #ffffff;
 }
 
 .housing-form-fieldset ul {
   list-style: none;
 }
-
 
 
 .filters {
@@ -367,13 +388,27 @@ span {
 
 .housing-form-fieldset {
   border: none;
-  margin: 0;
+  margin-right: 0;
   padding: 0;
+}
+
+.housing-form-fieldset:first-of-type {
+  margin-right: 110px;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.range {
+  margin-left: auto;
 }
 
 .range-filter {
   width: 330px;
-  margin: 50px auto;
+  margin: 0px auto;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -390,6 +425,7 @@ span {
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  position: relative;
 }
 
 .price-controls label {
@@ -406,15 +442,15 @@ span {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+  font-weight: normal;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
-font-size: 0;
+  font-size: 0;
   color: inherit;
   font: inherit;
-position: relative;
   background: none;
   border: none;
 }
@@ -486,10 +522,15 @@ position: relative;
   cursor: pointer;
 }
 
-.filter-option,
-.price-controls,
-legend {
-  padding: 0 73px;
+.filter-option {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.filter-option:first-of-type {
+  margin-top: 23px;
 }
 
 .filter-option span {
@@ -501,6 +542,7 @@ legend {
   background-color: #ffffff;
   border-radius: 2px;
 }
+
 
 [type=checkbox]:checked+span:before {
   content: '\2714';
@@ -535,6 +577,7 @@ legend {
 .sort-header {
   width: 80px;
   margin-left: 50px;
+  margin-right: 25px;
 }
 
 .user-sorting {
@@ -616,6 +659,7 @@ legend {
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 

@@ -273,8 +273,42 @@ span {
 }
 
 .header-button {
+  display: block;
   width: 570px;
   padding: 10px;
+  margin: auto;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 55px;
+  width: 460px;
+  margin: auto;
+}
+
+.input-info {
+  width: 455px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.search-form label {
+  align-items: left;
+}
+
+.search-form input {
+  box-sizing: border-box;
+  width: 345px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+}
+
+.search-form .number {
+  width: 115px;
 }
 
 .search button {
@@ -290,8 +324,10 @@ span {
   background-color: #503e33;
 }
 
-.search-btn {
+.search-form .search-btn {
   background-color: #81b3d2;
+  display: block;
+  width: 100%;
 }
 
 .search-btn:hover,

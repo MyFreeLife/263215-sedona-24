@@ -534,8 +534,8 @@ legend {
 }
 
 .filter-option span {
-  height: 12px;
-  width: 12px;
+  height: 21px;
+  width: 21px;
   border: 2px solid white;
   display: inline-block;
   position: relative;

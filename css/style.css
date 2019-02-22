@@ -123,7 +123,9 @@ a.current {
 
 /* главная */
 .promo {
-  background-image: url("../img/background-photo.jpg") no-repeat;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  min-height: 500px;
   background-size: 1200px auto;
   margin-bottom: 55px;
 }
@@ -211,7 +213,47 @@ span {
 }
 
 .advantages-item {
+  position: relative;
   width: 400px;
+}
+
+.advantages-item:first-of-type::before {
+  content: "";
+  position: absolute;
+  top:-70px;
+  left: 162px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  min-height: 75px;
+  background-size: 75px auto;
+  width: 75px;
+  height: 75px;
+}
+
+.advantages-item:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  top:-70px;
+  left: 160px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  min-height: 75px;
+  background-size: 75px auto;
+  width: 75px;
+  height: 75px;
+}
+
+.advantages-item:last-of-type::before {
+  content: "";
+  position: absolute;
+  top:-85px;
+  left: 160px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  min-height: 75px;
+  background-size: 75px auto;
+  width: 75px;
+  height: 90px;
 }
 
 .advantages-item p,
@@ -311,6 +353,10 @@ span {
   width: 115px;
 }
 
+.number-field {
+  
+}
+
 .search button {
   background-color: #766357;
 }
@@ -377,14 +423,15 @@ span {
 .footer-social {
   text-align: center;
   list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+  width: 151px;
 }
 
 .footer-social ul {
-  display: flex;
-  width: 151px;
   list-style: none;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0;
 }
@@ -402,6 +449,10 @@ span {
   text-align: right;
   line-height: 26px;
   margin-right: 100px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
 }
 
 /* каталог */
@@ -420,6 +471,11 @@ span {
 .filters {
   margin: 0;
   padding: 0;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    min-height: 215px;
+    background-size: 1200px auto;
+    margin-bottom: 55px;
 }
 
 .housing-form-fieldset {
